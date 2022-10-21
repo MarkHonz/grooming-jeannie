@@ -1,0 +1,27 @@
+@use '../../styles/abstracts/' as *;
+
+.nav {
+	flex: 1 1 0;
+	justify-content: space-around;
+	max-width: 66%;
+}
+
+.navbar {
+	display: flex;
+	background: linear-gradient(to top left, $nav-color1, $nav-color2);
+	z-index: 5;
+	border-radius: 0.3rem;
+}
+
+.navitem {
+	display: block;
+	text-transform: capitalize;
+	text-align: center;
+	flex: 1 1 0;
+}
+
+.navitem a {
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: $default-font-color;
+}

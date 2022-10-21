@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: inherit;
+}
+
+#root {
+	// Defines 1rem for entire site
+	box-sizing: border-box;
+	font-size: 62.5%;
+	background: #eee;
+}

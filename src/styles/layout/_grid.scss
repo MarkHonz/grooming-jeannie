@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+#root {
+	display: grid;
+	gap: none;
+	grid-auto-rows: auto;
+	justify-content: center;
+}
+
+// .home {
+// 	grid-template-columns: 2fr;
+// 	grid-template-rows: 1fr;
+// }
