@@ -1,0 +1,44 @@
+@use '../../styles/abstracts/' as *;
+
+.aside {
+	display: flex;
+	flex-flow: column;
+	background-image: linear-gradient(to top left, $var1-color, $main-color);
+	border-bottom: $main-color solid 0.5rem;
+	text-align: center;
+	border-radius: 0.7rem;
+	align-items: center;
+}
+
+.aside h3 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.services {
+	margin: 2rem 0;
+	padding: 1rem 0;
+	border-top: $border-color solid 0.5rem;
+	border-bottom: $border-color solid 0.5rem;
+	border-radius: 0.7rem;
+	width: 90%;
+
+	&__title {
+		text-decoration: underline;
+	}
+
+	&__listItem {
+		font-size: 2rem;
+		font-weight: 600;
+		text-transform: capitalize;
+	}
+}
+
+.mascot {
+	flex: 1 1 90%;
+
+	&__img {
+		width: 90%;
+	}
+}

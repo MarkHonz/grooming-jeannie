@@ -1,5 +1,4 @@
 .home {
-	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap-reverse;
@@ -7,15 +6,14 @@
 
 .main {
 	display: flex;
-	background: wheat;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
-	flex: 4 1 400px;
+	flex: 4 1 40rem;
 }
 
 .sidebar {
-	background: aquamarine;
-	align-items: flex-end;
+	display: flex;
+	align-items: flex-start;
 	justify-content: center;
-	flex: 1 1 100px;
+	flex: 1 1 10rem;
 }
