@@ -10,35 +10,31 @@
 	align-items: center;
 }
 
-.aside h3 {
-	font-size: 2.5rem;
-	font-weight: 700;
-	text-transform: capitalize;
-}
-
-.services {
-	margin: 2rem 0;
+.aside section {
+	margin: 2rem 0 0 0;
 	padding: 1rem 0;
 	border-top: $border-color solid 0.5rem;
 	border-bottom: $border-color solid 0.5rem;
 	border-radius: 0.7rem;
 	width: 90%;
-
-	&__title {
-		text-decoration: underline;
-	}
-
-	&__listItem {
-		font-size: 2rem;
-		font-weight: 600;
-		text-transform: capitalize;
-	}
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: capitalize;
 }
 
-.mascot {
-	flex: 1 1 90%;
+.aside h3 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-decoration: underline;
+}
 
-	&__img {
-		width: 90%;
-	}
+.aside img {
+	max-width: 80%;
+}
+
+.aside p,
+.aside a {
+	color: $default-font-color;
+	text-decoration: none;
+	font-size: 1.8rem;
 }
