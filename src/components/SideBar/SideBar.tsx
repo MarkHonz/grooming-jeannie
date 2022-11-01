@@ -1,29 +1,36 @@
 import React from 'react';
 import styles from './SideBar.module.scss';
 import mascot from '../../assets/images/mascot_verticle.png';
+import map from '../../assets/images/map.jpg';
 
 const SideBar = () => {
 	return (
 		<aside className={styles.aside}>
-			<section className={styles.services}>
-				<h3 className={styles.services__title}>services include</h3>
-				<ul className={styles.services__list}>
-					<li className={styles.services__listItem}>dog grooming</li>
-					<li className={styles.services__listItem}>dog baths</li>
-					<li className={styles.services__listItem}>cat grooming</li>
-					<li className={styles.services__listItem}>cat baths</li>
-					<li className={styles.services__listItem}>nail trimming</li>
-					<li className={styles.services__listItem}>ear cleaning</li>
-					<li className={styles.services__listItem}>glands expressed</li>
+			<section>
+				<h3>Get Directions</h3>
+				<a href="https://goo.gl/maps/86KggT97rTx">
+					<img src={map} alt="Map to the Grooming Jeannie" />
+					<p>1931 Belmont Ave.</p>
+					<p>Youngstown, OH 44504</p>
+					<p>(330)-978-1074</p>
+					<p>grooming: by appointment</p>
+				</a>
+			</section>
+			<section>
+				<h3>services include</h3>
+				<ul>
+					<li>dog grooming</li>
+					<li>dog baths</li>
+					<li>cat grooming</li>
+					<li>cat baths</li>
+					<li>nail trimming</li>
+					<li>ear cleaning</li>
+					<li>glands expressed</li>
 				</ul>
 			</section>
-			<section className={styles.mascot}>
+			<section>
 				<h3>The Grooming Jeannie</h3>
-				<img
-					className={styles.mascot__img}
-					src={mascot}
-					alt="Portrait of the Grooming Jeannie"
-				/>
+				<img src={mascot} alt="Portrait of the Grooming Jeannie" />
 			</section>
 		</aside>
 	);

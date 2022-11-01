@@ -1,19 +1,67 @@
+@use '../../styles/abstracts/' as *;
+
 .home {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap-reverse;
+	max-width: fit-content;
+	overflow: none;
 }
 
-.main {
+.primary {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	// flex: 4 1 40rem;
+	flex-basis: 40rem;
+	flex-grow: 4;
+	flex-shrink: 4;
+}
+
+.container {
+	width: max(100rem, 90%);
+	height: auto;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex: 4 1 40rem;
+	background-color: $poster-color;
+	padding: 3rem 5rem;
+	margin: 5rem auto;
+	border-radius: 0.8rem;
+}
+
+.left {
+	width: 60%;
+	padding: 20rem 0;
+	background-color: cadetblue;
+	background-image: url('../../assets/images/dog111.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 0.8rem;
+	height: 100%;
+}
+
+.right {
+	width: 40%;
+	background-color: #eee;
+	text-align: center;
+	align-items: center;
+	border-radius: 0.8rem;
+	margin-left: -12rem;
+	height: 30rem;
+	overflow-y: scroll;
+	padding: 1rem;
 }
 
 .sidebar {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	flex: 1 1 10rem;
+	// flex: 1 1 10rem;
+	min-width: none;
+	flex-basis: 10rem;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
